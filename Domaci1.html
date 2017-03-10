@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Domaci1</title>
+</head>
+<body>
+<script type="text/javascript">
+	
+ var niz = [7, 4, 52, 10, 4, 5, 12, 1, 3, 6];
+ var trazenaVrednost = 4;
+ var vrednostZaZamenu = 25;
+ var noviNiz = [];
+
+function menjanje(pocetniNiz,vrednostUNizu,vrednostZamena) 
+{
+	for (var i = 0; i < pocetniNiz.length; i++ )
+	{
+		if (pocetniNiz[i] == vrednostUNizu) 
+		{
+			noviNiz.push(vrednostZamena);
+		}
+		else 
+		{
+			noviNiz.push(pocetniNiz[i]);
+		}
+	}
+	vrednostUNizu = vrednostZamena;
+	console.log(noviNiz);
+}
+menjanje(niz,trazenaVrednost,vrednostZaZamenu);
+
+</script>
+</body>
+</html>

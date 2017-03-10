@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Domaci2</title>
+</head>
+<body>
+<script type="text/javascript">
+	
+var niz1 = [1, 3, 1, 5];
+var niz2 = [3, 6, 7, 8];
+
+function duplikat(niz) 
+{
+	for(var i = 0 ; i < niz.length ; i++)
+	{
+		for(var j = 1; j < niz.length ; j++)
+		{
+			if (niz[i]===niz[j]) 
+			{
+				return true;
+			}
+		}	
+		return false;	
+	}
+}
+
+if(duplikat(niz2)) 
+{
+	console.log("true");
+}
+else 
+{
+	console.log("false");
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+</script>
+</body>
+</html>
